@@ -10,7 +10,6 @@ button.onclick = function myFunction(){
   function printInput() {
     var value = document.getElementById("testInput").value;
     document.getElementById("printedStatement").innerHTML = value;
-
 }
 
 
