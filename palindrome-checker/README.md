@@ -6,7 +6,7 @@ A website built to check if a text input is a palindrome.
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Javascript
+- Javascript functions
 
 ## Author
 
