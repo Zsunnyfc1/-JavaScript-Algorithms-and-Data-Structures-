@@ -6,7 +6,7 @@ button.onclick = function myFunction(){
    palindrome(value);
 }
 
-  function printInput() {
+function printInput() {
     var value = document.getElementById("testInput").value;
     document.getElementById("printedStatement").innerHTML = value;
 }
