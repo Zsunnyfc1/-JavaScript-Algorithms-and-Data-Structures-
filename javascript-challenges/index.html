@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JavaScript Challenges</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+              rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7450ad814a.js" crossorigin="anonymous"></script>
+        <title>Javascript Challenges Webpage</title>
+    </head>
+    
+    <body>
+        <!--Navigation Bar-->
+        <nav id="navbar" class="nav">
+          <ul class="nav-list">
+            <li id="navabout"><a href="#about">About</a></li>
+            <li id="navpalindrome"><a href="#palindrome">Palindrome Checker</a></li>
+            <li id="navroman"><a href="#roman">Roman Numeral Converter</a></li>
+            <li id="navcaesar"><a href="#caesar">Caesars Cipher</a></li>
+            <li id="navphone"><a href="#telephone">Telephone Number Validator</a></li>
+            <li id="navcash"><a href="#register">Cash Register</a></li>
+          </ul>
+        </nav>
+      
+        <!--About Section-->
+        <section id="about">
+          <h2 id="name">This website is based off of</h2>
+          <h1><a id="fcc-link" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures#intermediate-algorithm-scripting" target="_blank">Freecodecamp's JavaScript Algorithms and Data Structures Projects</a></h1>
+           <div class="aboutbox">
+           <div id="about-text">
+            <h2 id="c1"><a href="#palindrome">
+              Challenge 1: Palindrome Checker </h2></a>
+             <h2> - checks if a word is a Palindrome</h2>
+             
+            <h2 id="c2"><a href="#roman">
+              Challenge 2: Roman Numeral Converter</h2></a>
+             <h2> - converts a number to a Roman Numeral</h2>
+             
+            <h2 id="c3"><a href="#caesar">
+              Challenge 3: Caesar's Cipher </h2></a>
+             <h2> - changes text into a Caesar Cipher </h2>
+             
+            <h2 id="c4"><a href="#telephone">
+              Challenge 4: Telephone Number Validator</h2></a>
+             <h2>- checks if a number is in telephone number format</h2>
+             
+            <h2 id="c5"><a href="#register">
+              Challenge 5: Cash Register </h2></a>
+             <h2> - Returns the amount of change you would recieve after a purchase</h2>
+          </div></div>
+          
+        </section>
+      
+        
+        <!--Palindrome Checker Section-->
+        <section id="palindrome">
+            <h2 class="title">Palindrome Checker</h2>
+            <div class="palindrome-section">
+              
+              <div class="description">
+                <div id="description-text">
+              <p>A palindrome is a word or sentence 
+                that's spelled the same way both 
+                forward and backward, ignoring 
+                punctuation, case, and spacing.</p>
+              <p>Enter text into the box and see if 
+                it is a palindrome.</p>
+                 </div>
+                </div>
+              
+              <div id="center">
+                <textarea id="inputArea"></textarea>
+              </div>
+              
+              <p><button type="button" 
+                         id="palindromeButton">
+                Check to see if it is a palindrome</button>
+              </p>
+              <div class="description">
+                <div id="response"></div>
+              </div>
+            </div>
+        </section>
+
+      <!--Roman Numeral Converter Section-->
+      <section id="roman">
+            <h2 class="title">Roman Numeral Converter</h2>
+            <div class="roman-section">
+              
+              <div class="description">
+                <div id="description-text">
+                  <h3>Roman Numeral Symbols</h3>
+                  <ul>
+                    <li>I = 1</li>
+                    <li>V = 5</li>
+                    <li>X = 10</li>
+                    <li>L = 50</li>
+                    <li>C = 100</li>
+                    <li>D = 500</li>
+                    <li>M = 1000</li>
+                   </ul>
+                 </div>
+                </div>
+              
+             <div class = "row">
+              <div class="col-6">
+                <form class="form">
+              <fieldset class="alternateSet">
+            <legend>Converts any inputted number 
+                into a Roman Numeral</legend>
+            <label class="alternateLabel">Number</label><br>
+            <input type="number" id="numInput" name="numInput" 
+                   min="1" max="99999" placeholder="number" required=""
+                   class="inputfield">
+            <button type="submit" id="NumberToRomanButton" 
+                    title="Convert to Roman Numerals">
+              Convert to Roman</button>
+              </fieldset>
+                  </form>
+              <div id="NumToRomResult" 
+                   class="printedresults" 
+                   title="Roman Numerals">2022 = MMXXII
+
+                </div>
+              </div>
+              
+               <div class="col-6">
+                 <form class="form">
+               <fieldset class="alternateSet">
+               <legend>Converts any inputted Roman Numeral 
+                into a Number</legend>
+                <label class="alternateLabel">Roman Number</label><br>
+                <input type="text" id="romanInput"name="romanInput" maxlength="32" 
+                       title="Roman Numerals IVXLCDM"placeholder="roman number" 
+                       required="" class="inputfield">
+              <button type="submit" id="RomanToNumberButton" 
+                      title="Convert to Number">
+                Convert to Number</button>
+              </fieldset>
+                 </form>
+               <div id="RomToNumResult" 
+                    class="printedresults">
+                 MMXXII = 2022
+                 </div>
+               </div>
+              
+              </div>
+              
+            </div>
+        </section>
+      
+      <!--Caesar Cipher Section-->
+        <section id="caesar">
+            <h2 class="title">Caesar Cipher</h2>
+            <div class="caesar-section">
+              
+              <div class="description">
+                <div id="description-text">
+              <p>A Caesar cipher (or a shift cipher), is a cipher 
+                 where the meanings of the letters 
+                 are shifted by some set amount.</p>
+              <p>The most common version is the ROT13 cipher
+                  which shifts the values of the letters by 13 places.</p>
+                 </div>
+                </div>
+              
+             <div class = "row">
+              <div class="col-6">
+                <form class="form">
+              <fieldset>
+            <legend>Converts any inputted text 
+                into a Caesar's Cipher</legend>
+                <label for="textcaesar">Text</label><br>
+            <input type="text" id="textcaesar" name="textcaesar" 
+                   placeholder="text" maxlength="32" required=""
+                   class="inputfield">
+            <button type="submit" id="TextToCaesarButton" 
+                    title="Convert to Caesar Cipher">
+              Convert to Caesar Cipher</button>
+              </fieldset>
+                  </form>
+              <div id="TextToCaesarResult" 
+                   class="printedresults" 
+                   >Green = Terra
+                </div>
+              </div>
+              
+               <div class="col-6">
+                 <form class="form">
+               <fieldset>
+               <legend>Converts any inputted Caesar Cipher back to Text</legend>
+                <label for="caesartext">
+                  Caesar Cipher</label><br>
+                <input type="text" id="caesartext" name="caesartext" maxlength="32" 
+                       placeholder="caesar cipher" 
+                       required=""
+                       class="inputfield">
+              <button type="submit" id="CaesarToTextButton" 
+                      title="Convert to Text">
+                Convert to Text</button>
+              </fieldset>
+                 </form>
+               <div id="CaesarToTextResult" 
+                    class="printedresults">
+                 Terra = Green
+                 </div>
+               </div>
+              
+              </div>
+              
+            </div>
+        </section>
+      
+      <!--Telephone Number Validator Section-->
+      <section id="telephone">
+            <h2 class="title">Telephone Number Validator</h2>
+            <div class="telephone-section">
+              <div class="description">
+                <div id="description-text">
+              <p>Checks if the inputted string follows the format of a valid US phone number.
+                 In the list below are examples of valid formats for US numbers:</p>
+              <p><pre><span class="inner-pre">
+              555-555-5555
+              (555)555-5555
+              (555) 555-5555
+              555 555 5555
+              5555555555
+              1 555 555 5555
+              </span></pre></p>
+                 </div>
+                </div>
+              
+              <form id="phoneform">
+               <fieldset class="alternateSet">
+               <legend>
+                 Check if it is a telephone number format</legend>
+                <label>Phone Number</label><br>
+                <input type="text" id="phoneInput" name="phoneInput" maxlength="32" 
+                       placeholder="555-555-5555" 
+                       required="" class="inputfield">
+              </fieldset>
+                 </form>
+              
+              <p><button type="button" 
+                         id="telephoneButton">
+                Check if it is a phone number</button>
+              </p>
+              <div class="description">
+                <div id="telephoneResponse"></div>
+              </div>
+            </div>
+        </section>
+      
+  
+            <!--Cash Register Section-->
+            <section id="register">
+            <h2 class="title">Cash Register</h2>
+            <div class="register-section">
+              
+             <div class="description">
+                <div id="description-text">
+              <p>This is a cash register function that 
+                takes in inputs of (1)Price and then (2)Payment 
+                according to the amounts of currency within the 
+                cash register and gives you the exact change.</p><br>
+              <p>The (1)Price input must be 
+                less than the (2)Payment input.</p><br>
+                 
+              <p>Returns {status: "INSUFFICIENT_FUNDS", change: []} if the cash-in-drawer 
+               is less than the change due, or if it can't return the exact change.</p><br>
+             <p>Returns {status: "CLOSED", change: ["Your Change"]} if all values are 
+               entered and the only currency  left is exactly the change amount.</p><br>
+             <p>Returns {status: "OPEN", change: ["Your Change"]}, with the change in coins 
+               and bills, and it is sorted from highest to lowest order.</p><br>
+                </div>
+               </div>
+              
+             <div class = "row">
+              <div class="col-6">
+                <form class="form">
+              <fieldset>
+            <legend>Enter Price</legend>
+                <label for="pricetext">Price</label><br>
+            <input type="number" id="priceInput" name="priceInput" 
+                   min="1" max="999" placeholder="price" required=""
+                   class="inputfield">
+              </fieldset>
+              </form>
+              </div>
+              
+               <div class="col-6">
+                 <form class="form">
+               <fieldset>
+               <legend>Enter Payment</legend>
+                <label for="paytext">Payment</label><br>
+                <input type="number" id="paymentInput" name="paymentInput" 
+                   min="1" max="999" placeholder="payment" required=""
+                       class="inputfield">
+              </fieldset>
+              </form>
+              </div>
+              
+              </div>
+              
+              <div id ="registerlist">
+              <form id="registerform">
+            <fieldset class="alternateSet">
+            <legend>The amount in the Cash-in Drawer</legend>
+              
+            <div class="flex-row-container">
+               <div class="flex-row-item">
+              <label class="alternateColor">Penny Amount</label>
+              <input type="number" name="cash-in-drawer" 
+                   id="pennyInput"
+                   min="1" max="999" 
+                   placeholder="pennies" required="" class="inputfield"></div>
+              
+              <div class="flex-row-item">
+          <label class="alternateColor">Nickel Amount</label>
+          <input type="number"  name="cash-in-drawer" 
+                   id="nickelInput"
+                   min="1" max="999" 
+                 placeholder="nickels" required="" class="inputfield"></div>
+              
+              <div class="flex-row-item">
+            <label class="alternateColor">Dime Amount</label>
+            <input type="number"  name="cash-in-drawer" 
+                   id="dimeInput"
+                   min="1" max="999" 
+                   placeholder="dimes" required="" class="inputfield"></div>
+
+                <div class="flex-row-item">
+             <label class="alternateColor">Quarter Amount</label>
+              <input type="number"  name="cash-in-drawer" 
+                   id="quarterInput"
+                   min="1" max="999" 
+                    placeholder="quarters" required="" class="inputfield"></div>
+              
+              <div class="flex-row-item">
+            <label class="alternateColor">One Dollar Amount</label>
+             <input type="number"  name="cash-in-drawer" 
+                   id="oneInput"
+                   min="1" max="999" 
+                   placeholder="one dollars" required="" class="inputfield"></div>
+                            
+              <div class="flex-row-item">
+            <label class="alternateColor">Five Dollar Amount</label>
+             <input type="number"  name="cash-in-drawer" 
+                   id="fiveInput"
+                   min="1" max="999" 
+                   placeholder="five dollars" required="" class="inputfield"></div>
+              
+              <div class="flex-row-item">
+            <label class="alternateColor">Ten Dollar Amount</label>
+             <input type="number"  name="cash-in-drawer" 
+                   id="tenInput"
+                   min="1" max="999" 
+                   placeholder="ten dollars" required="" class="inputfield"></div>
+                            
+              <div class="flex-row-item">
+            <label class="alternateColor">Twenty Dollar Amount</label>
+             <input type="number"  name="cash-in-drawer" 
+                   id="twentyInput"
+                   min="1" max="999" 
+                   placeholder="twenty dollars" required="" class="inputfield"></div>
+                           
+              <div class="flex-row-item">
+            <label class="alternateColor">One Hundred Dollar Amount</label>
+             <input type="number"  name="cash-in-drawer" 
+                   id="onehundredInput"
+                   min="1" max="999" 
+                   placeholder="one hundred dollars" required="" class="inputfield"></div>
+             </div>
+            </fieldset>
+            </form>
+            </div>
+              
+              <p><button type="button" 
+                         id="cashRegisterButton">
+                Check for Change</button></p>
+             <div class="description">
+              <div id="cashRegisterChange"></div>
+             </div>
+            </div>
+        </section>
+      
+     <!--Footer Section-->
+        <footer id="footer">
+            <p class="footer-link">Made by Sunny Zhang</p>
+            <p><a class="footer-link" 
+                  href="https://www.linkedin.com/in/sunny-zhang-3a773214b/">
+              View my LinkedIn</a></p>
+            <p><a class="footer-link" 
+                  href="https://github.com/Zsunnyfc1">
+              View this project on GitHub</a></p>
+        </footer>
+      
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
