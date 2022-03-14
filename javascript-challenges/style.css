@@ -36,11 +36,6 @@ a, a:visited, a:active {
   border-radius:3px;
  }
 
-/* a {
-  text-decoration: none;
-}
- */
-
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -60,16 +55,6 @@ a, a:visited, a:active {
   display: flex;
   margin-right: 12px;
   font-weight:bold;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1px;
-  }
 }
 
 .nav-list a {
@@ -296,6 +281,7 @@ label{
   color:#f8f8f8;
   max-width:100%;
   height:50px;
+  height:100%;
   font-size: 200%;
   padding: 5px;
   margin: 15px;
@@ -396,7 +382,7 @@ button:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width:1020px;
+    width:850px;
 }
 .flex-row-container > .flex-row-item {
     flex: 0 0 30%; /*grow | shrink | basis */
@@ -474,4 +460,116 @@ pre{
 
 .footer-link:hover{
   color:#3399ff;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: block;
+    font-size:12px;
+    justify-content:center;
+  }
+  
+  .nav-list {
+  font-weight:normal;
+}
+
+  .nav-list a{
+    font-size:12px;
+  }
+  
+  #navabout{
+  background:#ff4040;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+  }
+  
+#navabout:hover{
+  background:#ff4040;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+  
+#navpalindrome{
+  background:#2acaea;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+ }
+
+#navpalindrome:hover{
+  background:#2acaea;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+  
+#navroman{
+  background:#00b258;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#navroman:hover{
+  background:#00b258;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+  
+#navcaesar{
+  background:#ffa500;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+
+#navcaesar:hover{
+  background:#ffa500;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+  
+#navphone{
+  background:#800080;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+#navphone:hover{
+  background:#800080;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+  
+#navcash{
+  background:#003366;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+
+#navcash:hover{
+  background:#003366;
+  color:white;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+  
+  .flex-row-container > .flex-row-item{
+    padding:12px;
+    padding-top:15px;
+    padding-right:7px;
+    height:99px;
+  }
+  
+  .flex-row-container{
+    width:500px;
+  }
+  
 }
