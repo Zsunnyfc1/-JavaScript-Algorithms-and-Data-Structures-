@@ -328,6 +328,12 @@ button:hover{
   background-color: #00994c;
 }
 
+.buttonCenter{
+  height:55px;
+  width:180px;
+  margin-top:15px;
+}
+
 #caesar{
   padding: 100px 0px;
   background-image: linear-gradient(180deg,  #f5d549  0%, #ff7f50 100%);
